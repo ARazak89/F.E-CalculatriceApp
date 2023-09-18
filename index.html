@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@400;600&family=League+Spartan:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculatrice App</title>
+</head>
+
+<body>
+    <div class="calculatrice">
+        <div class="titreTheme">
+            <div class="titre">
+                <span>Calculator</span>
+            </div>
+            <!-- ================================== Selecteur de couleur ====================== -->
+            <div class="theme">
+                <span>theme &#160 </span>
+
+                <div class="switch">
+                    <input name="switch" id="one" type="radio" checked />
+                    <label for="one" class="switch__label one">1</label>
+                    <input name="switch" id="two" type="radio" />
+                    <label for="two" class="switch__label two">2</label>
+                    <input name="switch" id="three" type="radio" />
+                    <label for="three" class="switch__label three">3</label>
+                    <div class="switch__indicator"></div>
+                </div>
+
+            </div>
+            <!-- ================================================================ -->
+            <!-- Hassane ABdel-Razak -->
+        </div>
+        <div class="ecran">
+            <p id="result">
+
+            </p>
+        </div>
+        <div class="clavier">
+            <div class=" ligne1">
+                <button class="btn" type="button">7</button>
+                <button class="btn" type="button">8</button>
+                <button class="btn" type="button">9</button>
+                <button class="btn" id="res1" type="button">DEL</button>
+            </div>
+            <div class=" ligne2">
+                <button class="btn" type="button">4</button>
+                <button class="btn" type="button">5</button>
+                <button class="btn" type="button">6</button>
+                <button class="btn" type="button">+</button>
+            </div>
+            <div class=" ligne3">
+                <button class="btn" type="button">1</button>
+                <button class="btn" type="button">2</button>
+                <button class="btn" type="button">3</button>
+                <button class="btn" type="button">-</button>
+            </div>
+            <div class=" ligne4">
+                <button class="btn" type="button">.</button>
+                <button class="btn" type="button">0</button>
+                <button class="btn" type="button">÷</button>
+                <button class="btn" type="button">x</button>
+            </div>
+            <div class=" ligne5">
+                <button class="btn " id="res1" type="button">RESET</button>
+                <button class="btn" id="equaleT" type="button">=</button>
+                <!-- Hassane Abdel-Razak -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

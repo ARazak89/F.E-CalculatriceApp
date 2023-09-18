@@ -1,0 +1,190 @@
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+.calculatrice{
+    width: 40%;
+    margin: 30% auto 0 auto;
+    text-align: center;
+}
+.titreTheme{
+    display:flex;
+    width:95% ;
+    height: 2rem;
+    margin-left: 2.5%;
+}
+.titre{
+    width: 50%;
+    text-align: left;
+}
+.titre span{
+    padding-top: 2rem;
+    font-family:'League Spartan', sans-serif ;
+    font-size: 32px;
+}
+.theme{
+    width: 50%;
+    display: flex;
+    justify-content:end;
+}
+/* Hassane Abdel-Razak */
+.theme span{
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    
+}
+.ecran{
+    text-align: right;
+    width: 100%;
+    height: 5rem;
+    z-index: -2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#result{
+    padding-right: 10px;
+    font-family:'League Spartan', sans-serif ;
+    font-size: 32px;
+    position: relative;
+    top: 1rem;
+}
+#result p{
+    margin-top: 15px !important;
+}
+.clavier{
+    margin-top: 5px;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.ligne1 .btn, .ligne2 .btn, .ligne3 .btn, .ligne4 .btn, .ligne1 .res{
+    height: 4rem;
+    margin: 2px;
+    width: 7.5rem;
+    border-radius: 10px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+.ligne5 button{
+    height: 4rem;
+    margin: 2px;
+    width: 15.5rem;
+    border-radius: 10px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+
+/* =================== color picker ================= */
+
+/* Switch Container */
+.switch {
+    position: relative;
+    width: 4.3rem;
+    padding: 0 1rem;
+    font-family: verdana;
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+
+.switch:before {
+    content: '  ';
+    position: absolute;
+    left: 0rem;
+    z-index: -1;
+    width: 100%;
+    height: 1rem;
+    background: #000;
+    border-radius: 30px;
+}
+
+/* Label Styles */
+.switch__label {
+    width: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 200ms ease-out;
+    /* display: flex; */
+}
+
+.switch__label:hover {
+    color: white;
+}
+
+.one{
+    position: absolute;
+    top: -2rem;
+    left: -10px;
+}
+.two{
+    position: absolute;
+    top: -2rem;
+    left: 1.5rem;
+}
+.three{
+    position: absolute;
+    top: -2rem;
+    left: 3.5rem;
+}
+/* Indicator Styles */
+.switch__indicator {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: blue;
+    border-radius: 50%;
+    transition: transform 600ms cubic-bezier(0.02, 0.94, 0.09, 0.97),
+      background 300ms cubic-bezier(0.17, 0.67, 0.14, 1.03);
+    transform: translate3d(1rem, 0, 0);
+}
+/* Hassane Abdel-Razak */
+/* Indicator Color and Position based on checked input */
+input#one:checked ~ .switch__indicator {
+    background: hsl(25, 98%, 40%);
+    transform: translate3d(0.3rem, 0, 0);
+}
+
+input#two:checked ~ .switch__indicator {
+    background: hsl(25, 98%, 40%);
+    transform: translate3d(2.4rem, 0, 0);
+}
+
+input#three:checked ~ .switch__indicator {
+    background: hsl(176, 100%, 44%);
+    transform: translate3d(4.3rem, 0, 0);
+}
+
+/* Hide radio inputs */
+input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .calculatrice{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .ligne1 .btn, .ligne2 .btn, .ligne3 .btn, .ligne4 .btn, .ligne1 .res{
+        height: 4rem;
+        margin: 2px;
+        width: 5rem;
+        border-radius: 10px;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 32px;
+    }
+    .ligne5 button{
+        height: 4rem;
+        margin: 2px;
+        width: 10.5rem;
+        border-radius: 10px;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 32px;
+    }
+  }
+/* Hasssane Abdel-Razak */
